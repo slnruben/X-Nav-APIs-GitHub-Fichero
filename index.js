@@ -33,7 +33,7 @@ function writeFile() {
 	var name = $("#nameFile").val();
 	var text = $("#textFile").val();
 	
-	repo.write('master', name, text, 'init commit', function(err) {});
+	repo.write('gh-pages', name, text, 'init commit', function(err) {});
 }
 
 function getRepo() {
